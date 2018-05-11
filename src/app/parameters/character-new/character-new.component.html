@@ -1,0 +1,21 @@
+<div class="container mt-5">
+  <h1 class="text-center">Ajouter un nouveau personnage</h1>
+  <div class="row">
+    <form class="col-xs-12 offset-md-4 col-md-4">
+      <mat-form-field floatPlaceholder='auto'>
+        <input matInput formControlName="nom" type='text' placeholder="Nom" required />
+      </mat-form-field>
+      <!-- <mat-form-field floatPlaceholder='auto'>
+        <input matInput formControlName="oeuvres" type='text' placeholder="Oeuvre d'apparition" required/>
+      </mat-form-field> -->
+      <mat-form-field floatPlaceholder='auto'>
+        <textarea matInput formControlName="bio" placeholder="Biographie"></textarea>
+      </mat-form-field>
+      <!-- <mat-form-field floatPlaceholder='auto'>
+        <input matInput type="file" />
+      </mat-form-field> -->
+      <button mat-raised-button color='primary' class="mx-auto" (ngSubmit)="submit()" type='submit'>Envoyer</button>
+      <button mat-raised-button color='primary' class="mx-auto my-2" routerLink="../">Retour</button>
+    </form>
+  </div>
+</div>

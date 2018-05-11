@@ -1,0 +1,10 @@
+.separateur{
+  flex: 1 1 auto;
+}
+
+span{
+  margin-left: 10px;
+  margin-right: 10px;
+  outline:0;
+  cursor:pointer;
+}
